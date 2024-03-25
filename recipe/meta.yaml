@@ -1,5 +1,5 @@
 {% set name = "amazon-sagemaker-sql-magic" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon-sagemaker-sql-magic-{{ version }}.tar.gz
-  sha256: c97d05d356b7f5a7af771d1d1656718b86b50896fd348b4c1fa5d6b422da2b38
+  sha256: 9fe939fcd93d857132d7334a8de9c11f2cab74e9176cf7fab0a9a1124bc7fcc4
 
 build:
   noarch: python
