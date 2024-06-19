@@ -6,7 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon-sagemaker-sql-magic-{{ version }}.tar.gz
+  # Uncomment the next line and remove the hard coded url in any releases above 0.1.3. We should follow the url pattern not the hardcoded link.
+  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon-sagemaker-sql-magic-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/a3/30/e880d383466d7a950565c32f478ce7655452f717d54652f05a2cd0571fb0/amazon_sagemaker_sql_magic-0.1.3.tar.gz
   sha256: 0f9dc8f69104c910021ea99a506b813da6427d7afc2685a2a61ba3eab5204bf5
 
 build:
@@ -24,7 +26,7 @@ requirements:
     - python >=3.8
     - pandas
     - ipython
-    - sqlparse ==0.4.*
+    - sqlparse ==0.5.*
     - amazon-sagemaker-sql-execution >=0.0.7,<1
 
 test:
